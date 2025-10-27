@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Room Booking Form</title>
+</head>
+<body>
+
+  <center>
+    <fieldset style="margin-left: 450px;margin-right: 450px; border: 2px solid black;">
+    <h1><b>Hotel Room Booking Form</b></h1>
+
+    <form>
+      <table border="0" cellpadding="10" cellspacing="0">
+        <tr>
+          <td><b>Full Name:</b></td>
+          <td><input type="text" name="fullname" required></td>
+        </tr>
+
+        <tr>
+          <td><b>Email:</b></td>
+          <td><input type="email" name="email" required></td>
+        </tr>
+
+        <tr>
+          <td><b>Phone:</b></td>
+          <td><input type="tel" name="phone" required></td>
+        </tr>
+
+        <tr>
+          <td><b>Check-in Date:</b></td>
+          <td><input type="date" name="checkin" required></td>
+        </tr>
+
+        <tr>
+          <td><b>Check-out Date:</b></td>
+          <td><input type="date" name="checkout" required></td>
+        </tr>
+
+        <tr>
+          <td><b>Room Type:</b></td>
+          <td>
+            <select name="roomtype">
+              <option>Single Room</option>
+              <option>Double Room</option>
+              <option>Deluxe Room</option>
+              <option>Suite</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Number of Guests:</b></td>
+          <td><input type="number" name="guests" min="1" required></td>
+        </tr>
+
+        <tr>
+          <td><b>Special Requests:</b></td>
+          <td><textarea name="requests" rows="3" cols="25"></textarea></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset Form">
+          </td>
+        </tr>
+      </table>
+    </form></fieldset>
+  </center>
+  
+
+</body>
+</html>
